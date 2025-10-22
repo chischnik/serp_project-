@@ -1,0 +1,21 @@
+server:
+  port: 8080
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/serp
+    username: serp
+    password: serp_pw
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+app:
+  cors:
+    origins: "http://localhost:5173"
+security:
+  jwt:
+    secret: "dev_change_me_please_long_random"
+    issuer: "serp-auth"
+    expirationMinutes: 120

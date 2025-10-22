@@ -1,0 +1,25 @@
+{
+  "name": "serp-web",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview --port 5173",
+    "dev": "vite"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.26.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.3.2",
+    "typescript": "^5.3.3",
+    "vite": "^5.4.0"
+  }
+}
