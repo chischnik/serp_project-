@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/backend/serp-backend.iml" filepath="$PROJECT_DIR$/backend/serp-backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/serp-starter-updated.iml" filepath="$PROJECT_DIR$/.idea/serp-starter-updated.iml" />
     </modules>
   </component>

@@ -1,0 +1,28 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    # ⚠️ Du hast lokal über 5433 verbunden – nutze den gleichen Port hier:
+    url: jdbc:postgresql://127.0.0.1:5433/serp
+    username: serp
+    password: serp_pw
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate.format_sql: true
+      # optional; Hibernate erkennt Postgres automatisch, kann aber drin bleiben:
+      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
+      # Standard-Schema (du hast es bereits angelegt)
+      hibernate.default_schema: project
+
+app:
+  cors:
+    origins: "http://localhost:5173"
+
+security:
+  jwt:
+    secret: "DIES_IST_EIN_SEHR_LANGES_RANDOM_SECRET_MIN_32_BYTES_123456"
+    issuer: "serp-auth"
+    expirationMinutes: 120
